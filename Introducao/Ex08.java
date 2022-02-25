@@ -19,6 +19,8 @@ public class Ex08 {
 		custoConsumidor = custoFabrica + (custoFabrica * 0.73);
 		System.out.println("O custo final para o consumidor será R$: " + custoConsumidor );
 		
+		read.close();
+		
 	}
 
 }

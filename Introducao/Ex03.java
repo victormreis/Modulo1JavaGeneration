@@ -21,7 +21,7 @@ public class Ex03 {
 		System.out.println("O evento durou " + horas + ":" + minutos + ":" + segundos + " Horas/minutos/Segundos");
 		
 		
-	
+		read.close();
 
 	}
 

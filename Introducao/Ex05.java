@@ -23,6 +23,8 @@ public class Ex05 {
 		media =((n1 *2) + (n2 * 3) + (n3 *5 )) / 10 ;
 		System.out.print("A média final do aluno é: " + media);
 		
+		read.close();
+		
 	}
 
 }

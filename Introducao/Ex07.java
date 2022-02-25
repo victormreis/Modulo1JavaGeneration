@@ -29,7 +29,7 @@ public class Ex07 {
 		y=(a*f-c*d)/(a*e-b*d);
 		System.out.println("Os valores de X e Y são respectivamente: " + x + " e " + y);
 		
-
+		read.close();
 	}
 
 }

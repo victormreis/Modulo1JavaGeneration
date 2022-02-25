@@ -20,7 +20,7 @@ public class Ex02 {
 		System.out.println("Você tem " + anos + " anos, " + meses + " e meses " + dias + " dias de vida!");
 				
 		
-		
+		read.close();
 	}
 
 }

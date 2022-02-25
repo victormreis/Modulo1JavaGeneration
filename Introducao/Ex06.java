@@ -24,6 +24,8 @@ public class Ex06 {
 		distancia = Math.sqrt(resx + resy);
 		System.out.println("A distancia entre os pontos é: " +distancia);
 		
+		read.close();
+		
 		
 		
 		

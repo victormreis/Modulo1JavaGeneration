@@ -20,7 +20,7 @@ public class Ex01 {
 		total = (anos * 365 ) + (meses * 30) + dias ;
 		System.out.print("Você já viveu " + total + " dias!");
 		
-				
+		read.close();		
 	}
 
 }

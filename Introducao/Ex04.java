@@ -24,6 +24,7 @@ public class Ex04 {
 		d = (r + s) / 2;
 		System.out.println("O resultado da expressão é: " + d);				
 		
+		read.close();
 	}
 
 }
