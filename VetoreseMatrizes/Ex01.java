@@ -13,6 +13,7 @@ public class Ex01 {
 			for(i=0;i<5;i++) {
 				System.out.print("Digite o "+(i+1)+"º valor: ");
 				vet[i]= read.nextInt();
+				read.close();
 				if(vet[i]>maior) {
 					maior = vet[i];
 				}
@@ -21,7 +22,7 @@ public class Ex01 {
 			for(i=0; i<5;i++) {
 				System.out.print(vet[i]+"\t");
 			}
-			read.close();
+			
 			System.out.println("\nE o maior número digitado foi: "+maior);
 			
 		
