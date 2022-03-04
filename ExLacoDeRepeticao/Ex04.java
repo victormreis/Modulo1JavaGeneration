@@ -27,15 +27,17 @@ public class Ex04 {
 
 	public static void main(String[] args) {
 		Scanner read = new Scanner(System.in);		
-		int idade, sexo, opcoes, pessoasCalmas=0, mulheresNervosas=0, homensAgressivos=0, outrosCalmos=0, nervososMaior=0, calmasMenor=0;
+		int idade, sexo, opcoes,pessoas=1, pessoasCalmas=0, mulheresNervosas=0, homensAgressivos=0, outrosCalmos=0, nervososMaior=0, calmasMenor=0;
 		System.out.println("Entre com os dados Solicitados conforme instrução!");		
-		for(int i=1;i<=150;i++) {
+		
+		while(pessoas <=5) {
 			System.out.print("Digita sua idade: ");
 			idade=read.nextInt();
 			System.out.print("Digite um numero para representar seu sexo ([1]-feminino / [2]-masculino / [3]-Outros): ");
 			sexo = read.nextInt();
 			System.out.print("Digite um numero para representar sua opção (1-calma / 2-nervosa / 3-Agressiva): ");
 			opcoes= read.nextInt();
+			pessoas++;
 			if(opcoes == 1) {
 				pessoasCalmas++;
 				if(idade <18)
@@ -50,8 +52,9 @@ public class Ex04 {
 					nervososMaior++;				
 			}
 			if(sexo == 2 && opcoes ==3)
-				homensAgressivos++;							
+				homensAgressivos++;			
 		}
+		
 		System.out.println("A quantidade de pessoas calmas é "+pessoasCalmas);
 		System.out.println("O número de mulheres nervosas é "+mulheresNervosas);
 		System.out.println("O número de homens agressivos é "+homensAgressivos);
