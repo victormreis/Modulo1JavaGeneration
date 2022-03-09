@@ -1,14 +1,14 @@
 package Heranca;
 
-public class Animal {
+public abstract class Animal {
 	
-	private String nome, som;
+	private String nome;
 	private int idade;
 	
 	
 	
 	public String getNome() {
-		return nome;
+		return this.nome;
 	}
 	public void setNome(String nome) {
 		this.nome = nome;
@@ -19,11 +19,12 @@ public class Animal {
 	public void setIdade(int idade) {
 		this.idade = idade;
 	}
-	public String getSom() {
-		return som;
-	}
-	public void setSom(String som) {
-		this.som = som;
+	
+	public abstract void emitirSom();
+	
+	public void locomover()
+	{
+		System.out.println("Correndo...");
 	}
 	
 	
